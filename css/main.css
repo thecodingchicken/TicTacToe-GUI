@@ -1,0 +1,232 @@
+
+/*Tic Tac Toe:*/
+.ticTacToeBoard {
+    height: 90%;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+}
+
+.gameButton {
+    height: 25%;
+    width: 13%;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    font-size: 80px;
+}
+
+.gameButton:hover {
+    background-color: #bdbdbd;
+}
+
+.gb1 {
+    left: 27%;
+    top: 10%;
+}
+
+.gb2 {
+    left: 43.67%;
+    top: 10%;
+}
+.gb3 {
+    left: 60%;
+    top: 10%;
+}
+
+.gb4 {
+    left: 27%;
+    top: 40%;
+}
+
+.gb5 {
+    left: 43.67%;
+    top: 40%;
+}
+
+.gb6 {
+    left: 60%;
+    top: 40%;
+}
+
+.gb7 {
+    left: 27%;
+    top: 70%;
+}
+
+.gb8 {
+    left: 43.67%;
+    top: 70%;
+}
+
+.gb9 {
+    left: 60%;
+    top: 70%;
+}
+
+.blurPage {
+    background-color: gray;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.sideBtn {
+    border-radius: 10px;
+    border-color: transparent;
+    position: absolute;
+
+    width: 10%;
+    height: 7%;
+    background-color: #42A5F5;
+    font-family: monospace;
+    font-weight: bold;
+
+    -moz-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    transition: all .2s;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+
+}
+
+.sideBtn:hover {
+    -moz-box-shadow:0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 18px 60px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow:0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 18px 60px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 18px 60px 0 rgba(0, 0, 0, 0.19);
+
+    margin-top: -3px;
+    transition: all .2s;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+}
+
+.meFirstBtn {
+    top: 25%;
+    left: 10%;
+}
+
+.playAgainBtn {
+    bottom: 15%;
+    right: 7%;
+    display: none;
+}
+
+/* Main */
+
+.top-tron {
+    width: 100%;
+    height: 95%; /* refer to footer height if changed */
+    padding-top: 50px;
+}
+
+
+.light-gray{
+    background-color: #e7e7e7;
+}
+
+.icon-bar {
+    color: black;
+}
+
+/* Side Nav */
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+
+  footer {
+      position: fixed;
+  }
+}
+
+/* SideNav: */
+
+.nav-img:hover {
+    opacity: 0.5;
+}
+
+
+.sidenav {
+    height: 100%; /*refer to footer height*/
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    /*border-right: 1px solid #bdbdbd;
+    border-top: 0px solid #bdbdbd;*/
+    /*margin-top: 30px;*/
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    background-color: transparent;
+    /*color: #818181;*/
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: gray;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    /*padding: 16px;*/
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;
+
+  }
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 767px) {
+  .sidenav {
+      margin-top: 35px;
+    background-color:  #e7e7e7;
+  }
+
+  /* end Side Nav */
+
+  .nav-img:hover {
+    opacity: 0.5;
+}
+
+.meFirstBtn {
+    top: 25%;
+    left: 10%;
+}
+
+.playAgainBtn {
+    bottom: 15%;
+    right: 7%;
+    display: none;
+}
